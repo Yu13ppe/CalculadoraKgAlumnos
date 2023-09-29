@@ -1,0 +1,114 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #333; /* Cambia el color de fondo a oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; /* Cambia el color del texto a claro */
+}
+
+.container {
+    max-width: 400px;
+    background-color: #444; /* Cambia el color de fondo a un tono más oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-shadow: 0 0 10px #05aaff, 0 0 20px #05aaff, 0 0 30px #05aaff, 0 0 40px #05aaff, 0 0 50px #05aaff;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555; /* Cambia el color de fondo a oscuro */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    background-color: #666; /* Cambia el color de fondo a un tono más oscuro */
+}
+
+button {
+    background-color: #007aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #05aaff;
+}
+
+.resultados {
+    margin-top: 20px;
+    background-color: #444; /* Cambia el color de fondo a un tono más oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+.resultados h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.resultados p {
+    margin: 5px 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Estilos para los inputs */
+.input-container input {
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555; /* Cambia el color de fondo a oscuro */
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 5px #05aaff, 0 0 20px #05aaff, 0 0 30px #05aaff, 0 0 40px #05aaff, 0 0 50px #05aaff;
+    }
+    100% {
+        box-shadow: 0 0 15px #05aaff, 0 0 30px #05aaff, 0 0 40px #05aaff, 0 0 50px #05aaff, 0 0 60px #05aaff;
+    }
+}
